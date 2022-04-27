@@ -19,7 +19,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-container">
+            <div class="container header__container">
                 <nav class="nav">
                     <a href="./index.html" class="logo"
                         >Web<span class="logo__text">Studio</span></a
@@ -44,7 +44,14 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="site__list header-container list">
+                <button type="button" class="mobile-menu-btn" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
+                        <use
+                            href="./images/icons/icons.svg#burger-icon-menu"
+                        ></use>
+                    </svg>
+                </button>
+                <ul class="site__list list">
                     <li class="site__link">
                         <a href="mailto:info@devstudio.com" class="contacts">
                             <svg class="contacts__mail">
@@ -66,6 +73,68 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <ul class="mobile-menu__nav list">
+                        <li class="mobile-menu__item">
+                            <a href="./index.html" class="mobile-menu__link"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./portfolio.html" class="mobile-menu__link"
+                                >Портфолио</a
+                            >
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#contacts" class="mobile-menu__link"
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__group">
+                        <ul class="mobile-menu__contacts list">
+                            <li class="mobile-menu__contacts-item">
+                                <a
+                                    href="tel:+380961111111 "
+                                    class="contacts-tel"
+                                >
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts-item">
+                                <a
+                                    href="mailto:info@devstudio.com"
+                                    class="contacts-email"
+                                >
+                                    info@devstudio.com</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__socials">
+                            <li class="mobile-menu__socials-item">Instagram</li>
+                            <li class="mobile-menu__socials-item">Twitter</li>
+                            <li class="mobile-menu__socials-item">Facebook</li>
+                            <li class="mobile-menu__socials-item">LinkedIn</li>
+                        </ul>
+                    </div>
+                    <button
+                        type="button"
+                        class="mobile-menu__close-btn"
+                        data-menu-close
+                    >
+                        <svg
+                            class="mobile-menu__close-icon"
+                            width="40"
+                            height="40"
+                        >
+                            <use
+                                href="./images/icons/icons.svg#icon-close"
+                            ></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </header>
         <main>
@@ -647,5 +716,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
