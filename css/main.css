@@ -65,7 +65,7 @@ body {
   margin: -1px;
 }
 
-.footer-btn, .footer-contacts__link, .customers__link, .team__link, .about__text, .advantages__container, .hero__btn, .modal-btn__send, .modal-check__text > span, .modal-check__text, .modal-btn {
+.footer-btn, .footer-contacts__link, .footer-contacts__list, .customers__link, .team__link, .about__text, .advantages__container, .hero__btn, .modal-btn__send, .modal-check__text > span, .modal-check__text, .modal-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +292,6 @@ body {
 }
 
 .logo {
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.1923076923;
@@ -366,7 +365,7 @@ body {
     line-height: 0;
   }
 
-  .contacts-tel {
+  .mobile-menu__contacts-tel {
     font-size: 34px;
     font-weight: 500;
     line-height: 1.4117647059;
@@ -374,7 +373,7 @@ body {
     color: var(--accent-color);
   }
 
-  .contacts-email {
+  .mobile-menu__contacts-email {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.1666666667;
@@ -412,6 +411,10 @@ body {
     padding: 0;
   }
 
+  .logo {
+    margin-right: 93px;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -437,14 +440,14 @@ body {
     margin-right: 0;
   }
 
-  .contacts__mail {
+  .contacts-mail__icon {
     width: 14px;
     height: 10px;
     margin-right: 10px;
     fill: currentColor;
   }
 
-  .contacts__tel {
+  .contacts-tel__icon {
     width: 10px;
     height: 14px;
     margin-right: 10px;
@@ -485,6 +488,72 @@ body {
   }
   .site-nav__link.active-page.active-page.site-nav__link::after {
     opacity: 1;
+  }
+
+  .site__link {
+    margin-bottom: 10px;
+  }
+  .site__link:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .site__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .site__link {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .site__link:last-child {
+    margin-right: 0;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: var(--header-link-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts:hover, .contacts:focus {
+    color: var(--accent-color);
+  }
+
+  .contacts-mail__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  .contacts-tel__icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
   }
 }
 .hero {
@@ -619,6 +688,11 @@ body {
   color: var(--hero-title-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 .team {
   max-width: 1600px;
   margin: 0 auto;
@@ -750,20 +824,13 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
-  margin: 0 auto;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2f303a;
 }
 
-.footer-container {
-  align-items: baseline;
-  display: flex;
-}
-
-.footer-address {
-  width: 230px;
+.address {
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -777,47 +844,30 @@ body {
 .footer-logo__text {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+  font-weight: 400;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
 }
 
-.address {
-  font-style: normal;
-  margin-top: 20px;
-}
-
 .address__item {
-  margin-bottom: 9px;
-}
-.address__item:last-child {
-  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .address__map {
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
   color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address__map:hover, .address__map:focus {
-  color: var(--accent-color);
 }
 
 .address__link {
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address__link:hover, .address__link:focus {
-  color: var(--accent-color);
 }
 
 .footer-contacts {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .footer-contacts__title {
@@ -826,13 +876,8 @@ body {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
   color: #ffffff;
-}
-
-.footer-contacts__list {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer-contacts__item {
@@ -864,26 +909,20 @@ body {
   fill: currentColor;
 }
 
-.footer-form {
-  margin-left: 93px;
-}
-
 .footer-form__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--hero-title-color);
+  color: #ffffff;
+  margin-top: 60px;
   margin-bottom: 20px;
-}
-
-.footer-input {
-  display: flex;
 }
 
 .footer-input__mail {
   padding-left: 16px;
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -907,6 +946,7 @@ body {
 .footer-btn {
   padding: 10px 29px;
   margin-left: 12px;
+  margin: auto;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -929,6 +969,59 @@ body {
   fill: var(--hero-btn-title);
 }
 
+@media screen and (max-width: 1999px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-contacts {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    align-items: baseline;
+    display: flex;
+    text-align: inherit;
+  }
+
+  .footer-address {
+    width: 230px;
+  }
+
+  .footer-contacts {
+    margin-left: 70px;
+  }
+
+  .footer-form {
+    margin-left: 93px;
+  }
+
+  .footer-form__title {
+    margin-top: 0;
+  }
+
+  .footer-input {
+    display: flex;
+  }
+
+  .footer-input__mail {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
 .filter {
   display: flex;
   justify-content: center;
