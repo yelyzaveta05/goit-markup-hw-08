@@ -1,6 +1,7 @@
-@media screen and (max-width: 1199px) {
+
     .about {
         padding-top: 0;
+        display: none;
     }
     
     .about__title {
@@ -32,6 +33,9 @@
     
     .about__text {
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
         width: 100%;
         height: 70px;
@@ -44,6 +48,10 @@
         text-transform: uppercase;
     
         color: var(--hero-title-color);
-        @extend %align-list;
+    }
+
+@media screen and (min-width: 1200px) {
+    .about {
+        display: block;
     }
 }
