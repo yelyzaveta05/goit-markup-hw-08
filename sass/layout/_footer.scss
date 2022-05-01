@@ -163,6 +163,10 @@
     .footer-contacts {
         margin-top: 0px;
     }
+
+    .footer-input__mail{
+        width: 450px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -200,5 +204,7 @@
     .footer-input__mail{
         margin-bottom: 0;
         margin-right: 12px;
+
+        width: 358px;
     }
 }
