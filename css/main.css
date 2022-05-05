@@ -276,6 +276,7 @@ body {
 }
 
 .modal-check__link {
+  margin-left: 5px;
   text-decoration: underline;
   color: var(--accent-color);
 }
@@ -296,6 +297,12 @@ body {
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -321,6 +328,11 @@ body {
   .modal-form__label {
     font-size: 20px;
     line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+  .modal-check__text {
+    font-size: 14px;
+    line-height: 1.71429;
     letter-spacing: 0.03em;
   }
 }
@@ -462,6 +474,15 @@ body {
   }
   .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu__contacts-tel {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -718,10 +739,6 @@ body {
   border-radius: 4px;
 }
 
-.advantages__item:not(:first-child) {
-  margin-top: 30px;
-}
-
 .advantages__icon {
   width: 70px;
   height: 70px;
@@ -749,7 +766,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .advantage__section {
-    padding: 60px 0;
+    padding-bottom: 60px;
   }
   .advantages {
     display: flex;
@@ -765,7 +782,6 @@ body {
   .advantages__item {
     margin-left: 15px;
     flex-basis: calc((100% - 4*15px) / 4);
-    margin-top: 30px;
   }
 }
 
@@ -1244,7 +1260,8 @@ body {
 }
 
 .filter__container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filter {
@@ -1359,6 +1376,10 @@ body {
   padding: 20px 24px;
 }
 
+.portfolio__element {
+  padding: 18px;
+}
+
 .portfolio__title {
   margin-bottom: 4px;
   font-size: 18px;
@@ -1375,9 +1396,12 @@ body {
   color: var(--second-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter {
     justify-content: center;
+  }
+  .portfolio {
+    justify-content: space-between;
   }
   .portfolio__item {
     margin-right: 30px;
@@ -1392,6 +1416,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+  }
   .portfolio__item {
     margin-right: 30px;
     margin-bottom: 30px;

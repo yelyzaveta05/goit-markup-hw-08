@@ -161,6 +161,13 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .mobile-menu__contacts-tel {
+        @include font(24px, 500, 48px, 0.02em);
+    }
+}
+
+
 @media screen and (min-width: 768px) {
 
     .header{
