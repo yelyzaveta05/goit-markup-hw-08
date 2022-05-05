@@ -24,8 +24,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
 
     transform: translate(-50%, -50%) scale(1);
 
@@ -59,7 +59,7 @@
 }
 
 .modal__title {
-    @include font(20px, 700, 23px, 0.03em);
+    @include font(20px, 700, 30px, 0.03em);
     text-align: center;
 
     color: var(--title-color);
@@ -69,7 +69,7 @@
 .modal-form__label {
     display: block;
     margin-bottom: 4px;
-    @include font(20px, null, 23px, 0.03em);
+    @include font(12px, null, 14px, 0.03em);
 
     color: var(--second-text-color);
 }
@@ -135,7 +135,7 @@
 
 .modal-check__text {
     @extend %align-list;
-    @include font(14px, null, 24px, 0.03em);
+    @include font(12px, null, 13px, 0.03em);
 
     color: var(--second-text-color);
     cursor: pointer;
@@ -191,8 +191,24 @@
     @extend %align-list;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .modal__title {
+        @include font(20px, 700, 30px, 0.03em);
+    }
+}
 
 @media screen and (min-width: 1200px){
+    .modal{
+        width: 528px;
+        min-height: 581px;
+    }
+
+    .modal__title {
+        @include font(20px, 700, 23px, 0.03em);
+    }
+
+    .modal-form__label {
+        @include font(20px, null, 23px, 0.03em);
+    }
 
 }

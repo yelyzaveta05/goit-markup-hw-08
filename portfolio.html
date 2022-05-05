@@ -27,14 +27,14 @@
                     >
                     <ul class="site-nav list">
                         <li class="site-nav__item">
-                            <a
-                                href="./index.html"
-                                class="site-nav__link active-page"
+                            <a href="./index.html" class="site-nav__link"
                                 >Студия</a
                             >
                         </li>
                         <li class="site-nav__item">
-                            <a href="./portfolio.html" class="site-nav__link"
+                            <a
+                                href="./portfolio.html"
+                                class="site-nav__link active-page"
                                 >Портфолио</a
                             >
                         </li>
@@ -114,10 +114,46 @@
                             </li>
                         </ul>
                         <ul class="mobile-menu__socials">
-                            <li class="mobile-menu__socials-item">Instagram</li>
-                            <li class="mobile-menu__socials-item">Twitter</li>
-                            <li class="mobile-menu__socials-item">Facebook</li>
-                            <li class="mobile-menu__socials-item">LinkedIn</li>
+                            <li class="mobile-menu__socials-item">
+                                <a
+                                    class="mobile-menu__social-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener
+                                noreferrer"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a
+                                    class="mobile-menu__social-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener
+                                noreferrer"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a
+                                    class="mobile-menu__social-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener
+                                noreferrer"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a
+                                    class="mobile-menu__social-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener
+                                noreferrer"
+                                    >LinkedIn</a
+                                >
+                            </li>
                         </ul>
                     </div>
                     <button
@@ -173,10 +209,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-1-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop1-min.jpg    1x,
+                                                ./images/portfolio-desktop1@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet1-min.jpg     1x,
+                                                ./images/portfolio-tablet1.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio1-mobile-min.jpg    1x,
+                                                ./images/portfolio1-mobile@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio1-mobile-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -194,10 +253,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-2-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop2-min.jpg    1x,
+                                                ./images/portfolio-desktop2@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet2-min.jpg    1x,
+                                                ./images/portfolio-tablet2@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio2-mobile.-min.jpg    1x,
+                                                ./images/portfolio2-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop2-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -217,10 +299,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-3-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop3-min.jpg    1x,
+                                                ./images/portfolio-desktop3@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet3-min.jpg     1x,
+                                                ./images/portfolio-tablet3.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio3-mobile.-min.jpg    1x,
+                                                ./images/portfolio3-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop3-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -231,7 +336,7 @@
                                 </div>
                                 <div class="portfolio__content">
                                     <h2 class="portfolio__title">
-                                        Постер New Orlean vs Golden Star
+                                        Ресторан Seafood
                                     </h2>
                                     <p class="portfolio__text">Приложение</p>
                                 </div>
@@ -240,10 +345,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-4-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop4-min.jpg    1x,
+                                                ./images/portfolio-desktop4@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet4-min.jpg     1x,
+                                                ./images/portfolio-tablet4.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio4-mobile.-min.jpg    1x,
+                                                ./images/portfolio4-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop4-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -263,10 +391,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-5-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop5-min.jpg    1x,
+                                                ./images/portfolio-desktop5@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet5-min.jpg     1x,
+                                                ./images/portfolio-tablet5.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio5-mobile.-min.jpg    1x,
+                                                ./images/portfolio5-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop5-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -286,10 +437,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-6-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop6-min.jpg    1x,
+                                                ./images/portfolio-desktop6@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet6-min.jpg     1x,
+                                                ./images/portfolio-tablet6.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio6-mobile.-min.jpg    1x,
+                                                ./images/portfolio6-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop6-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -309,10 +483,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-7-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop7-min.jpg    1x,
+                                                ./images/portfolio-desktop7@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet7-min.jpg     1x,
+                                                ./images/portfolio-tablet7.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio7-mobile.-min.jpg    1x,
+                                                ./images/portfolio7-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop7-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -332,10 +529,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-8-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop8-min.jpg    1x,
+                                                ./images/portfolio-desktop8@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet8-min.jpg     1x,
+                                                ./images/portfolio-tablet8.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio8-mobile.-min.jpg    1x,
+                                                ./images/portfolio8-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop8-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -353,10 +573,33 @@
                         <li class="portfolio__item">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__thumb">
-                                    <img
-                                        src="./images/portfolio-9-min.jpg"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-desktop9-min.jpg    1x,
+                                                ./images/portfolio-desktop9@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio-tablet9-min.jpg     1x,
+                                                ./images/portfolio-tablet9.@2x-min.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio9-mobile-min.jpg     1x,
+                                                ./images/portfolio9-mobile.@2x-min.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/portfolio-desktop9-min.jpg"
+                                            alt="фото сотрудника"
+                                        />
+                                    </picture>
                                     <p class="portfolio__info">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
