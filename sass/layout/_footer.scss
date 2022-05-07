@@ -4,6 +4,10 @@
     padding-bottom: 60px;
 }
 
+.footer-group{
+    margin-bottom: 60px;
+}
+
 .address{
     margin-top: 20px;
 }
@@ -87,7 +91,6 @@
     @include font(14px, 700, 16px, 0.03em);
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -156,7 +159,7 @@
 @media screen and (min-width: 768px) {
     .footer-group{
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-around;
     }
 
